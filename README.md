@@ -1,4 +1,4 @@
-AdvancedStorage Smart Contract
+###AdvancedStorage Smart Contract
 
 An enhanced version of a basic storage contract built with Solidity.
 This contract allows multiple users to store, track, and retrieve their own sets of numbers — complete with timestamps and event logs.
@@ -57,3 +57,4 @@ Emitted whenever a user stores a new number.
 🪪 License
 
 This project is licensed under the MIT License.
+
