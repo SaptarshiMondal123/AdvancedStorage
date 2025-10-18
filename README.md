@@ -1,31 +1,59 @@
-SimpleStorage Smart Contract
+AdvancedStorage Smart Contract
 
-A basic Solidity smart contract that lets users store and retrieve a number on the Ethereum blockchain. Perfect for beginners learning Solidity and smart contract development.
+An enhanced version of a basic storage contract built with Solidity.
+This contract allows multiple users to store, track, and retrieve their own sets of numbers — complete with timestamps and event logs.
 
-Features
+🧠 Overview
 
-Store a number
+The AdvancedStorage contract enables each user to:
 
-Retrieve the stored number
+Store multiple numbers (not just one!)
 
-Lightweight and easy to understand
+Retrieve their full history of stored numbers
 
-How to Use
+View their most recently stored number
 
-Deploy the contract using a platform like Remix IDE or any Ethereum development environment.
+Check when they last updated their data
 
-Use the store function to save a number.
+Each action is recorded on the blockchain, making it fully transparent and verifiable.
 
-Use the retrieve function to read the stored number.
+⚙️ Features
 
-Prerequisites
+User-Specific Storage: Every address has its own independent storage history.
 
-Basic understanding of Solidity
+Data History: Keeps a record of all numbers a user has stored.
 
-Familiarity with Ethereum smart contracts
+Timestamps: Tracks the exact time each user last updated their data.
 
-Tools like Node.js or Hardhat for local development
+Event Logging: Emits events whenever a new number is stored (useful for front-end integration).
 
-License
+🚀 How to Use
 
-MIT License
+Deploy the contract using Remix IDE, Hardhat, or Foundry.
+
+Call the store function to add a number to your personal storage history.
+
+Use:
+
+retrieveAll() → to get your full history
+
+retrieveLatest() → to get your most recent number
+
+lastUpdated() → to check the last update timestamp
+
+🧩 Tech Stack
+
+Language: Solidity
+
+Compiler Version: ^0.8.28
+
+Network: Ethereum-compatible (works on testnets like Sepolia, Goerli, or local Hardhat node)
+
+🧾 Events
+
+NumberStored(address user, uint256 number, uint256 timestamp)
+Emitted whenever a user stores a new number.
+
+🪪 License
+
+This project is licensed under the MIT License.
